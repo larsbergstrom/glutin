@@ -126,6 +126,7 @@ fn main() {
                                             "EGL_EXT_platform_device".to_string(),
                                         ],
                                         "1.5", "core", &mut file).unwrap();
+        println!("cargo:rustc-link-lib=EGL");
     }
 
     if target.contains("ios") {
